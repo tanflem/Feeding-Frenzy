@@ -44,9 +44,11 @@ public class FishScript : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        birdIsAlive = false;
-        logic.gameOver();
-    }
+    
+    void OnCollisionEnter (Collision targetObj) {
+if(targetObj.gameObject.tag == "Resistance")
+  {
+        Destroy(targetObj.gameObject);
+  }
+}
 }
