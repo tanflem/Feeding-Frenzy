@@ -13,17 +13,15 @@ public class LogicScript : MonoBehaviour
     [ContextMenu("Add Score")]
     public void addScore(int score)
     {
-        scoreText = GameObject.FindWithTag("ScoreText").GetComponent<TextMesh>();
         playerScore += score;
-        scoreText.text = playerScore.ToString();
+        this.scoreText.text = playerScore.ToString();
     }
 
     public void restartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         playerScore = 0;
-
-        scoreText.text = playerScore.ToString();
+        this.scoreText.text = playerScore.ToString();
     }
 
     public void gameOver()
