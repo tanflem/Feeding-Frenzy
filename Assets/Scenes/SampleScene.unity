@@ -741,6 +741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fish
       objectReference: {fileID: 0}
+    - target: {fileID: 7726822910551459249, guid: f9b0960edec844e59bcb685d3f8f8ba3, type: 3}
+      propertyPath: growAmount
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7726822910551459253, guid: f9b0960edec844e59bcb685d3f8f8ba3, type: 3}
       propertyPath: m_RootOrder
       value: 2
