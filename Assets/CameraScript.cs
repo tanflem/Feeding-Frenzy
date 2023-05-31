@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +19,13 @@ public class CameraScript : MonoBehaviour
             Vector3 lookPos = target.transform.position;
             lookPos.z = -10f;
             transform.position = lookPos;
-            size = target.transform.localScale.x;
+        }
+    }
+    
+    // LateUpdate is called after all of the other update methods have been called
+    void LateUpdate() {
+        if (( Mathf.Abs(target.transform.localScale.x * 10) % 10 ) == 0) {
+            Camera.main.orthographicSize = Mathf.Abs(target.transform.localScale.x) * 10;
         }
     }
 }
