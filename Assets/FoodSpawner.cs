@@ -33,16 +33,13 @@ public class FoodSpawner : MonoBehaviour
 
     void SpawnFood()
     {
-         // Get the camera object.
-    Camera camera = Camera.main;
+        Vector3 boxSize = new Vector3(1000f, 1000f, 0f);
 
-    // Get the size of the camera's view frustum.
-    Vector3 size = camera.WorldToScreenPoint(Vector3.zero) - camera.WorldToScreenPoint(new Vector3(1, 1, 1));
+        // Get a random point inside the box.
+        Vector3 randomBoxPoint = new Vector3(UnityEngine.Random.Range(-boxSize.x, boxSize.x), UnityEngine.Random.Range(-boxSize.y, boxSize.y), 0);
 
-    // Get a random point outside the camera's view frustum.
-    Vector3 randomPoint = new Vector3(UnityEngine.Random.Range(-size.x, size.x), UnityEngine.Random.Range(-size.y, size.y), 0);
+        // Instantiate the food object at the random point.
+        Instantiate(food, randomBoxPoint, transform.rotation);
 
-    // Instantiate the food object at the random point.
-    Instantiate(food, randomPoint, transform.rotation);
     }
 }
