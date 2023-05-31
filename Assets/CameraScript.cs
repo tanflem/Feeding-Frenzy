@@ -24,8 +24,6 @@ public class CameraScript : MonoBehaviour
     
     // LateUpdate is called after all of the other update methods have been called
     void LateUpdate() {
-        if (( Mathf.Abs(target.transform.localScale.x * 10) % 10 ) == 0) {
-            Camera.main.orthographicSize = Mathf.Abs(target.transform.localScale.x) * 10;
-        }
+            Camera.main.orthographicSize = Mathf.Abs(target.transform.localScale.x) * 10;        
     }
 }

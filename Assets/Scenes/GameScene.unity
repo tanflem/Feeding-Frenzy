@@ -181,8 +181,8 @@ SpriteRenderer:
   m_SortingLayerID: 1396214619
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1cd881a3248054391abe77c653d9649b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 9117b201dc37148309d1e8c5e7396920, type: 3}
+  m_Color: {r: 0, g: 0.6436324, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -201,7 +201,7 @@ Transform:
   m_GameObject: {fileID: 10768137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5, y: 9, z: 0}
-  m_LocalScale: {x: 649.93, y: 624.1291, z: 1}
+  m_LocalScale: {x: 22494, y: 21601.035, z: 34.609882}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1104,7 +1104,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5, y: -14}
+  m_AnchoredPosition: {x: -5, y: -14.0000305}
   m_SizeDelta: {x: -200, y: -199.427}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &681950593
@@ -1622,8 +1622,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: 182.008}
-  m_SizeDelta: {x: 698, y: 87.983}
+  m_AnchoredPosition: {x: 0, y: 200.32547}
+  m_SizeDelta: {x: 1105, y: 67.6291}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1234977323
 MonoBehaviour:
@@ -1981,10 +1981,10 @@ RectTransform:
   m_Father: {fileID: 941193254}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -281, y: 202.71349}
-  m_SizeDelta: {x: 167.6514, y: 38.9267}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 280, y: -36.5}
+  m_SizeDelta: {x: 165.65137, y: 38.926697}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690161438
 MonoBehaviour:
@@ -2367,6 +2367,10 @@ PrefabInstance:
     - target: {fileID: 7726822910551459249, guid: f9b0960edec844e59bcb685d3f8f8ba3, type: 3}
       propertyPath: growAmount
       value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726822910551459249, guid: f9b0960edec844e59bcb685d3f8f8ba3, type: 3}
+      propertyPath: swimStrength
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 7726822910551459252, guid: f9b0960edec844e59bcb685d3f8f8ba3, type: 3}
       propertyPath: m_SortingOrder

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class FoodMoveScript : MonoBehaviour
 {
+    public float speedMultiplier = 10;
     public float moveSpeed = 5;
     public float deadZone = -45;
     // Start is called before the first frame update
@@ -28,12 +29,12 @@ public class FoodMoveScript : MonoBehaviour
         direction.Normalize();
 
         // Move the food object in the direction of the player.
-        transform.Translate(direction * moveSpeed * Time.deltaTime);
+        transform.Translate(direction * moveSpeed * Time.deltaTime * speedMultiplier);
 
         // transform.position = transform.position + Vector3.left * moveSpeed * Time.deltaTime;
         // if (transform.position.x < deadZone)
-        // {
+        //  {
         //     Destroy(gameObject);
-        // }   
+        //  }   
     }
 }
