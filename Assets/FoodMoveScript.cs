@@ -16,6 +16,8 @@ public class FoodMoveScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        
         // Get the player's position.
         Vector3 playerPosition = GameObject.Find("Fish").transform.position;
 
