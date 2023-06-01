@@ -28,7 +28,7 @@ public class FoodMoveScript : MonoBehaviour
         // Normalize the direction vector.
         direction.Normalize();
 
-        // Move the food object in the direction of the player.
+        // Move the food object in the opposite direction of the player.
         transform.Translate(direction * moveSpeed * Time.deltaTime * speedMultiplier);
 
         // transform.position = transform.position + Vector3.left * moveSpeed * Time.deltaTime;
