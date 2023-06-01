@@ -8,6 +8,7 @@ public class FoodMoveScript : MonoBehaviour
     public float speedMultiplier = 10;
     public float moveSpeed = 5;
     public float deadZone = -45;
+    public float radius;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,6 @@ public class FoodMoveScript : MonoBehaviour
     void Update()
     {
 
-        
         // Get the player's position.
         Vector3 playerPosition = GameObject.Find("Fish").transform.position;
 
@@ -28,8 +28,8 @@ public class FoodMoveScript : MonoBehaviour
         // Normalize the direction vector.
         direction.Normalize();
 
-        // Move the food object in the opposite direction of the player.
-        transform.Translate(direction * moveSpeed * Time.deltaTime * speedMultiplier);
+        // Move the AI in the opposite direction of the player.
+        transform.Translate(-direction * moveSpeed * Time.deltaTime);
 
         // transform.position = transform.position + Vector3.left * moveSpeed * Time.deltaTime;
         // if (transform.position.x < deadZone)
